@@ -511,7 +511,7 @@ body::before {
 }
 
 .tag {
-    color: #000;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
@@ -520,15 +520,22 @@ body::before {
     border-radius: 4px
 }
 
+.tag--red {
+    background: #ac2a21
+}
+
 .tag--green {
-    background: #bed732
+    background: #a3e56e;
+    color: #000
 }
 
 .tag--yellow {
-    background: #ecb664
+    background: #ecb664;
+    color: #000
 }
 
 .tag--orange {
+    color: #000;
     background: #ffbd00
 }
 
@@ -551,10 +558,35 @@ body::before {
     -ms-flex-align: center;
     align-items: center;
     gap: 7.5px;
-    color: #000;
+    color: #fff;
     -webkit-transition: background .3s, color .3s, border .3s;
     -o-transition: background .3s, color .3s, border .3s;
     transition: background .3s, color .3s, border .3s
+}
+
+.btn svg path {
+    -webkit-transition: fill .3s;
+    -o-transition: fill .3s;
+    transition: fill .3s
+}
+
+.btn--red {
+    background: #ac2a21;
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+
+.btn--red:hover {
+    color: #ac2a21;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #ac2a21
+}
+
+.btn--red:hover svg path {
+    fill: #ac2a21
+}
+
+.btn--red svg path {
+    fill: #fff
 }
 
 .btn--green {
@@ -569,23 +601,13 @@ body::before {
 
 .btn--grey {
     background: #cdcdcd;
-    border: 1px solid #cdcdcd
+    border: 1px solid #cdcdcd;
+    color: #000
 }
 
 .btn--grey:hover {
     background: rgba(0, 0, 0, 0);
     border: 1px solid #cdcdcd
-}
-
-.btn--red {
-    background: #ab2a20;
-    color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0)
-}
-
-.btn--red:hover {
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid #ab2a20
 }
 
 .btn--black {
@@ -601,12 +623,12 @@ body::before {
 }
 
 .btn--white {
-    border: 1px solid #bed732;
+    border: 1px solid #ac2a21;
     background: #fff
 }
 
 .btn--white:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .title {
@@ -727,7 +749,7 @@ body::before {
 }
 
 .select .select-items div:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .select .select-hide {
@@ -760,8 +782,8 @@ body::before {
 }
 
 .checkbox--actived .checkbox {
-    border: 1px solid #bed732;
-    background: #bed732
+    border: 1px solid #ac2a21;
+    background: #ac2a21
 }
 
 .checkbox--actived .checkbox svg {
@@ -812,7 +834,7 @@ body::before {
 }
 
 .header {
-    background: #f7f7f7;
+    background: #252525;
     padding: 10px 0;
     margin-bottom: 30px
 }
@@ -961,7 +983,7 @@ body::before {
 }
 
 .breadcrumbs-list__link:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .breadcrumbs-list__link-home {
@@ -1066,11 +1088,12 @@ body::before {
 }
 
 .nav-list__item--active .nav-list__button {
-    background: #bed732
+    background: #ac2a21;
+    color: #fff
 }
 
 .nav-list__item--active .nav-list__button:hover {
-    color: #000
+    color: #fff
 }
 
 .nav-list__button {
@@ -1111,7 +1134,7 @@ body::before {
 }
 
 .nav-list__button:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .nav-list__button-icon {
@@ -1268,7 +1291,7 @@ body::before {
 }
 
 .links__link:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .content__inner {
@@ -1348,11 +1371,23 @@ body::before {
 }
 
 .navigation-list__item--active {
-    background: #bed732
+    background: #ac2a21
+}
+
+.navigation-list__item--active .navigation-list__link-icon {
+    background: rgba(255, 255, 255, .2)
+}
+
+.navigation-list__item--active .navigation-list__link-icon svg path {
+    fill: #fff
+}
+
+.navigation-list__item--active .navigation-list__link {
+    color: #fff
 }
 
 .navigation-list__item--active .navigation-list__link:hover {
-    color: #000
+    color: #fff
 }
 
 .navigation-list__link {
@@ -1373,7 +1408,7 @@ body::before {
 }
 
 .navigation-list__link:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .navigation-list__link-icon {
@@ -1432,7 +1467,10 @@ body::before {
     background: #f7f7f7;
     width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content
+    width: max-content;
+    -webkit-transition: cubic-bezier() .3s;
+    -o-transition: cubic-bezier() .3s;
+    transition: cubic-bezier() .3s
 }
 
 .tubs__button {
@@ -1448,15 +1486,16 @@ body::before {
 }
 
 .tubs__button:hover {
-    color: #bed732
+    color: #ac2a21
 }
 
 .tubs .mixitup-control-active {
-    background: #bed732
+    background: #ac2a21;
+    color: #fff
 }
 
 .tubs .mixitup-control-active:hover {
-    color: #000
+    color: #fff
 }
 
 .history-windows {
@@ -2520,6 +2559,10 @@ body::before {
     height: 62px
 }
 
+.subscriptions-item--black .subscriptions-item__body-link:hover {
+    color: #fff
+}
+
 .subscriptions-item__body {
     max-width: 141px;
     display: -webkit-box;
@@ -2876,7 +2919,7 @@ body::before {
     width: 100%;
     margin-bottom: 18px;
     border-radius: 10px;
-    background: #bed732;
+    background: #ac2a21;
     padding: 22px 15px 17px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2895,7 +2938,7 @@ body::before {
 }
 
 .services-heading__title {
-    color: #000;
+    color: #fff;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -2903,14 +2946,14 @@ body::before {
 }
 
 .services-heading__text {
-    color: #000;
+    color: #fff;
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 4px
 }
 
 .services-heading__price {
-    color: #000;
+    color: #fff;
     font-size: 18px;
     line-height: 22px
 }
@@ -3130,8 +3173,9 @@ body::before {
 }
 
 .offers-heading__until:hover {
-    background: #bed732;
-    border: 1px solid rgba(0, 0, 0, 0)
+    background: #ac2a21;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff
 }
 
 .offers-info {
@@ -3189,7 +3233,7 @@ body::before {
 }
 
 .offers-sublist__item--available .offers-sublist__text {
-    color: #bed732
+    color: #1fa709
 }
 
 .offers-sublist__item--limited {
@@ -3254,7 +3298,6 @@ body::before {
 .offers-sublist__link {
     padding: 6px 14px;
     border-radius: 4px;
-    color: #000;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px
@@ -4577,7 +4620,7 @@ body::before {
     position: relative;
     padding: 17px;
     border-radius: 4px;
-    border: 2px solid #bed732;
+    border: 2px solid #ac2a21;
     background: #fff
 }
 
@@ -4588,7 +4631,7 @@ body::before {
 }
 
 .upload:hover .upload__text {
-    color: #bed732
+    color: #ac2a21
 }
 
 .upload__input {
@@ -4782,7 +4825,7 @@ body::before {
     background: #fff;
     padding: 15px 35px 20px 32px;
     border-radius: 4px;
-    border-left: 4px solid #bed732;
+    border-left: 4px solid #ac2a21;
     padding-right: 35px;
     padding-left: 32px
 }
@@ -4821,7 +4864,8 @@ body::before {
     color: #000;
     font-size: 14px;
     line-height: 17px;
-    font-weight: 500
+    font-weight: 500;
+    border: 1px solid #bed732
 }
 
 .story-info__wrapper {
@@ -5333,7 +5377,7 @@ body::before {
 
     .nav-list__item--active .nav-list__button {
         background: rgba(0, 0, 0, 0);
-        color: #bed732
+        color: #ac2a21
     }
 }
 

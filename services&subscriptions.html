@@ -23,7 +23,7 @@
                             <img class="logo__img-image" src="images/logo.svg" alt="logo">
                         </picture>
                     </a>
-                    <a class="header__phone phone" href="tel:2470">
+                    <a class="header__tel tel" href="tel:2470">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                             <path
                                 d="M19.9987 10.0148C19.9987 15.5392 15.521 20.0134 10.0014 20.0134C4.47768 20.0134 0 15.5352 0 10.0148C0 4.49036 4.47768 0.016116 10.0014 0.016116C15.521 0.0120924 19.9987 4.49036 19.9987 10.0148Z"
@@ -38,6 +38,21 @@
                             2470
                         </span>
                     </a>
+                    <div class="header__burger burger">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="4" fill="#BED732"></rect>
+                            <rect x="9" y="9" width="22" height="2" rx="1" fill="white"></rect>
+                            <rect x="9" y="19" width="22" height="2" rx="1" fill="white"></rect>
+                            <rect x="9" y="29" width="22" height="2" rx="1" fill="white"></rect>
+                        </svg>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="4" fill="#BED732"></rect>
+                            <rect x="9.91528" y="8.50098" width="30.5241" height="2" rx="1"
+                                transform="rotate(45 9.91528 8.50098)" fill="white"></rect>
+                            <rect x="31.499" y="9.91504" width="30.5241" height="2" rx="1"
+                                transform="rotate(135 31.499 9.91504)" fill="white"></rect>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </header>
@@ -282,25 +297,25 @@
                                     </ul>
                                 </nav>
                             </aside>
-                            <div class="content__page page">
-                                <section class="page__services services">
-                                    <div class="services__tubs tubs">
-                                        <div class="tubs__button tubs__button--active" data-filter="all">
-                                            Все
-                                        </div>
-                                        <div class="tubs__button" data-filter=".category-a">
-                                            Услуги
-                                        </div>
-                                        <div class="tubs__button" data-filter=".category-b">
-                                            Подписки
-                                        </div>
+                            <div class="content__page page page--services-subscriptions">
+                                <div class="page__tubs tubs">
+                                    <div class="tubs__button tubs__button--active" data-filter="all">
+                                        Все
                                     </div>
+                                    <div class="tubs__button" data-filter=".category-a">
+                                        Услуги
+                                    </div>
+                                    <div class="tubs__button" data-filter=".category-b">
+                                        Подписки
+                                    </div>
+                                </div>
+                                <section class="page__services services mix category-b">
                                     <h2 class="services__title title">
                                         Услуги по подписке
                                     </h2>
                                     <div class="services__swiper services-swiper services-swiper--active swiper">
                                         <div class="services-swiper__wrapper swiper-wrapper">
-                                            <div class="services-swiper__slide services-slide swiper-slide mix category-a">
+                                            <div class="services-swiper__slide services-slide swiper-slide">
                                                 <div class="services-slide__heading services-heading">
                                                     <h4 class="services-heading__title">
                                                         ДЛЯ ТЕХ, КТО В ШУМНОМ ГОРОДЕ
@@ -456,7 +471,7 @@
                                                     Оформить заказ
                                                 </a>
                                             </div>
-                                            <div class="services-swiper__slide services-slide swiper-slide mix category-b">
+                                            <div class="services-swiper__slide services-slide swiper-slide">
                                                 <div class="services-slide__heading services-heading">
                                                     <h4 class="services-heading__title">
                                                         ДЛЯ ТЕХ, КТО ЕЗДИТ ШИРЕ
@@ -616,7 +631,7 @@
                                                     Оформить заказ
                                                 </a>
                                             </div>
-                                            <div class="services-swiper__slide services-slide swiper-slide mix category-b">
+                                            <div class="services-swiper__slide services-slide swiper-slide">
                                                 <div class="services-slide__heading services-heading">
                                                     <h4 class="services-heading__title">
                                                         ДЛЯ ТЕХ, КТО МЧИТСЯ ДАЛЬШЕ
@@ -783,7 +798,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="page__offerings offerings">
+                                <section class="page__offerings offerings mix category-a">
                                     <h2 class="offerings__title title">
                                         Разовые услуги (без подписки)
                                     </h2>
